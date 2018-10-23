@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="header__wrap container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active has-dropdown dropmic">
+                <a href="" class="nav__link" data-dropmic-btn>
+                  <span class="nav__text-logo">mac</span>
+                  <span class="nav__text-desc">modern air combat</span>
+                </a>
+                <div class="header-submenu dropmic-menu" aria-hidden="true">
+                  <ul class="header-submenu__list">
+                    <li class="header-submenu__item">
+                      <a href="" class="header-submenu__link header-submenu__link--settings">Game options</a>
+                    </li>
+                    <li class="header-submenu__item">
+                      <a href="" class="header-submenu__link header-submenu__link--book">Encyclopedia</a>
+                    </li>
+                    <li class="header-submenu__item">
+                      <a href="" class="header-submenu__link header-submenu__link--shop">Shop</a>
+                    </li>
+                    <li class="header-submenu__item">
+                      <a href="" class="header-submenu__link header-submenu__link--exit">Exit</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item has-dropdown dropmic">
+                <a href="" class="nav__link" data-dropmic-btn>
+                  <span class="nav__text-logo">fl</span>
+                  <span class="nav__text-desc">flying legend</span>
+                </a>
+                <div class="header-submenu dropmic-menu" aria-hidden="true">
+                  <div class="header-submenu__content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat!</p>
+                    <button class="btn btn--block">Buy game</button>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item has-dropdown dropmic">
+                <a href="" class="nav__link" data-dropmic-btn>
+                  <span class="nav__text-logo">dcs</span>
+                  <span class="nav__text-desc">digital combat simulator</span>
+                </a>
+                <div class="header-submenu dropmic-menu" aria-hidden="true">
+                  <div class="header-submenu__content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat!</p>
+                    <button class="btn btn--block btn--accent">Run game</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="start-game">
+            <button type="button" class="start-game__btn">start</button>
+            <div class="start-game__details dropmic">
+              <div class="start-game__summary" data-dropmic-btn>random single mission</div>
+              <ul class="start-game__list dropmic-menu" aria-hidden="true">
+                <li class="start-game__mission-item">single mission</li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__user">
+            <div class="user-nav has-dropdown dropmic" data-dropmic-direction="top-right">
+              <div class="user-nav__wrap" data-dropmic-btn>
+                <span class="user-nav__name">su-27C</span>
+                <img src="img/avatar.jpg" width="60" height="60" alt="su-27C" class="user-nav__avatar">
+                <span class="user-nav__arrow"></span>
+              </div>
+              <div class="header-submenu header-submenu--right dropmic-menu" aria-hidden="true">
+                <div class="header-submenu__masthead user-nav__bar">
+                  <img class="user-nav__icon" src="img/rank.png" width="50" height="50" alt="">
+                  <div class="user-nav__info">
+                    <div class="user-nav__login">Login User</div>
+                    <div class="user-nav__rank">User Rank: Lieutenant</div>
+                  </div>
+                </div>
+                <ul class="header-submenu__list">
+                  <li class="header-submenu__item">
+                    <a href="" class="header-submenu__link header-submenu__link--logbook">Logbook</a>
+                  </li>
+                  <li class="header-submenu__item">
+                    <a href="" class="header-submenu__link header-submenu__link--settings">Setup aircraft</a>
+                  </li>
+                  <li class="header-submenu__item">
+                    <a href="" class="header-submenu__link header-submenu__link--joystick">Setup controls</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-slider">
+        <div class="page-slider__nav">
+          <button class="page-slider__btn page-slider__btn--prev"></button>
+          <button class="page-slider__btn page-slider__btn--next"></button>
+        </div>
+        <div class="page-slider__list">
+          <div class="page-slider__slide" style="background-image: url(./img/su-27c.png)"></div>
+        </div>
+        <div class="page-slider__controls">
+          <div class="page-slider__thumb"></div>
+        </div>
+      </div>
+      <div class="carousel js-carousel">
+        <div class="carousel__container js-frame">
+          <div class="carousel__arrows">
+            <button class="carousel__prev"></button>
+            <button class="carousel__next"></button>
+          </div>
+          <div class="carousel__wrap">
+            <ul class="carousel__slides js-slides">
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="Hawk">
+                  <div class="card__image" style="background-image: url(./img/hawk.png)"></div>
+                  <div class="card__name">Hawk</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="C-101 Aviojet">
+                  <div class="card__image" style="background-image: url(./img/c-101.png)"></div>
+                  <div class="card__name">C-101 Aviojet</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="F/A-18C">
+                  <div class="card__image" style="background-image: url(./img/f-18.png)"></div>
+                  <div class="card__name">F/A-18C</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="Mirage 2000C">
+                  <div class="card__image" style="background-image: url(./img/m-2000.png)"></div>
+                  <div class="card__name">Mirage 2000C</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="Yak-52">
+                  <div class="card__image" style="background-image: url(./img/yak-52.png)"></div>
+                  <div class="card__name">Yak-52</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card card--lock">
+                  <div class="card__sides">
+                    <div class="card__image" style="background-image: url(./img/m-2000.png)"></div>
+                    <div class="card__back">
+                      <div class="card__unlock">Buy to unlock</div>
+                      <button class="btn btn--block card__buy-btn">buy</button>
+                    </div>
+                  </div>
+                  <div class="card__name">MIG-15</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card card--lock">
+                  <div class="card__sides">
+                    <div class="card__image" style="background-image: url(./img/l-39.png)"></div>
+                    <div class="card__back">
+                      <div class="card__unlock">Buy to unlock</div>
+                      <button class="btn btn--block card__buy-btn">buy</button>
+                    </div>
+                  </div>
+                  <div class="card__name">L-39C</div>
+                </div>
+              </li>
+              <li class="js-slide">
+                <div class="card js-select-aircraft" data-aircraft="L-39C">
+                  <div class="card__image" style="background-image: url(./img/l-39.png)"></div>
+                  <div class="card__name">L-39C</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-loading" id="loading">
+        <div class="loading loading--lg"></div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
