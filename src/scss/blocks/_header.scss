@@ -97,21 +97,21 @@
     background-size: contain;
   }
   &--logbook::before {
-    background-image: url(../../img/logbook.png);
+    background-image: url(../img/logbook.png);
   }
   &--settings::before {
-    background-image: url(../../img/settings.png);
+    background-image: url(../img/settings.png);
   }
   &--joystick::before {
-    background-image: url(../../img/joystick.png);
+    background-image: url(../img/joystick.png);
   }
   &--book::before {
-    background-image: url(../../img/book.png);
+    background-image: url(../img/book.png);
   }
   &--shop::before {
-    background-image: url(../../img/shopping-cart.png);
+    background-image: url(../img/shopping-cart.png);
   }
   &--exit::before {
-    background-image: url(../../img/exit.png);
+    background-image: url(../img/exit.png);
   }
 }

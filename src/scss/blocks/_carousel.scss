@@ -55,7 +55,7 @@
 
 .carousel__prev {
   left: -60px;
-  background-image: url(../../img/back.png);
+  background-image: url(../img/back.png);
   @include max(1820) {
     left: 0;
   }
@@ -63,7 +63,7 @@
 
 .carousel__next {
   right: -60px;
-  background-image: url(../../img/next.png);
+  background-image: url(../img/next.png);
   @include max(1820) {
     right: 0;
   }
