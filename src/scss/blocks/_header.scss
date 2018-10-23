@@ -1,0 +1,117 @@
+.header {
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid rgba(#fff, 0.35);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.header__wrap {
+  display: flex;
+  height: 120px;
+}
+
+.header__user {
+  display: flex;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+// header dropdown
+.dropmic--show .header-submenu {
+  display: block;
+}
+
+.header-submenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 15px);
+  left: calc(50% - 30px);
+  min-width: 302px;
+  background-color: hsla(210, 33%, 98%, 0.75);
+  color: #000;
+  border-radius: 3px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    border: 5px solid transparent;
+    border-bottom: 10px solid hsla(210, 33%, 98%, 0.75);
+  }
+  &--right {
+    right: 0;
+    left: auto;
+    &::after {
+      right: 60px;
+      left: auto;
+    }
+  }
+}
+
+.header-submenu__content {
+  padding: 20px;
+  p {
+    margin-top: 0;
+  }
+}
+
+.header-submenu__masthead {
+  padding: 30px 25px;
+  border-bottom: 1px solid rgba(#000, 0.15);
+}
+
+.header-submenu__list {
+  @include list-unstyled;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-submenu__item {
+  position: relative;
+}
+
+.header-submenu__link {
+  display: block;
+  padding: 10px 30px;
+  color: #000;
+  &:hover {
+    background-color: hsla(210, 33%, 98%, 0.3);
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &--logbook::before {
+    background-image: url(../../img/logbook.png);
+  }
+  &--settings::before {
+    background-image: url(../../img/settings.png);
+  }
+  &--joystick::before {
+    background-image: url(../../img/joystick.png);
+  }
+  &--book::before {
+    background-image: url(../../img/book.png);
+  }
+  &--shop::before {
+    background-image: url(../../img/shopping-cart.png);
+  }
+  &--exit::before {
+    background-image: url(../../img/exit.png);
+  }
+}

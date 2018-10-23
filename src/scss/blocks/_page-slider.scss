@@ -1,0 +1,67 @@
+.page-slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.page-slider__btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-top: -25px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  background-size: 14px 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color .25s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(#fff, 0.35);
+  }
+  &--prev {
+    left: 40px;
+    background-image: url(../../img/left-arrow.png);
+  }
+  &--next {
+    right: 40px;
+    background-image: url(../../img/right-arrow.png);
+  }
+}
+
+.page-slider__list {
+  width: 100%;
+  height: 100%;
+}
+
+.page-slider__slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-slider__controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.page-slider__control {
+  width: calc(100% / 3);
+  height: 15px;
+  background-color: rgba(#000, 0.35);
+  border-radius: 2px;
+}
